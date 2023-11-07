@@ -156,6 +156,13 @@ article{
     align-items: center;
 }
 
+.Ofertas{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
 .logoybuscador{
     width: 100%;
     display: flex;
@@ -165,6 +172,7 @@ article{
     justify-content: space-around;
 
     .Logo{
+        display: inline;
         flex-grow: 0.5;
 
     }
