@@ -7,7 +7,12 @@
     --Verde: #39b54a;
 }
 
-
+  
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 
 body {
     background-color: #EAC926;
@@ -15,21 +20,168 @@ body {
     font-size: 12px;
 }
 
-h4 {
-    font-size: 24px;
+ @media (min-width: 361px){ 
+.descripcion{display:none}
+.nav{display: none};}
+
+/*version desktop
+@media (min-width:769px){
+}}*/
+.titular{
+    text-align: center;
 }
 
-.precio {
-    font-size: 18px;
+h4 {font-size: 24px;
 }
 
-.descuento {
-    font-size: 16px;
+.fa-truck{
+    color:var(--Verde)
 }
 
-.descripcion {
-    font-size: 16px;
+
+.descripcion { 
+    font-size: 15px;
+    width: 100%;
+    margin-top: 10px; 
+   
+    
+        border-top: solid 1px var(--Gris-claro);
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: flex-start;
+    }
+    
+
+
+.menu-hamburguesa{
+    color: white;
+    background-color: #03264C;
+    inline-size: 15px;
+    border-radius: 2px;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+}   
+
+.pie{
+    text-align: center;
 }
+
+.fa-credit-card{
+    font-size:2em;
+    margin-bottom: 10px;
+}
+.fa-gift{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+main{
+   text-align: center;
+    width: 90%;
+    margin:0px auto;
+}
+article{
+    margin: 10px;
+    width: 210px;
+    height: 300px;
+    background-color: #ebebeb;
+   box-shadow: 0px 0px 10px rgb(100,100,100);
+  
+}
+.cajachica{
+    border-top: 1px solid #ebebeb; 
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    align-content: flex-start;
+    #icon{display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;} 
+    
+}   
+
+
+
+.precio-descuento{
+    margin-top:10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content:space-between;
+
+    .precio{
+        font-size: 18px;
+        flex-grow: 0.3;
+        justify-content: flex-start;
+
+    }
+
+    .descuento{
+        font-size: 16px;
+        flex-grow: 0.7;
+        justify-content: flex-end;
+        color:var(--Verde)
+    }
+}
+
+.img{
+    width: 200px;
+}
+.ultima-visita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoybuscador{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .Logo{
+        flex-grow: 0.5;
+
+    }
+    #buscador-header{
+        flex-grow:0.5;    }
+}
+.compraencuotas{
+    display: flex;
+    justify-content: center;    
+}
+
+
+
+
+
+
+
 
 
 
