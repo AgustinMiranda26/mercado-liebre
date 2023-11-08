@@ -38,22 +38,7 @@ h4 {font-size: 24px;
 }
 
 
-.descripcion { 
-    font-size: 15px;
-    width: 100%;
-    margin-top: 10px; 
-   
-    
-        border-top: solid 1px var(--Gris-claro);
 
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-between;
-        align-items: flex-start;
-    }
-    
 
 
 .menu-hamburguesa{
@@ -88,14 +73,14 @@ h4 {font-size: 24px;
 main{
    text-align: center;
     width: 90%;
-    margin:0px auto;
+    margin: auto;
 }
 article{
     margin: 10px;
     width: 220px;
     height: 300px;
-    background-color: #ebebeb;
-   box-shadow: 0px 0px 10px rgb(100,100,100);
+    background-color: #ffffff;
+   box-shadow: 0px 0px 15px rgb(100,100,100);
   
 }
 .cajachica{
@@ -117,6 +102,18 @@ article{
         top: -15px;} 
     
 }   
+.descripcion-producto{ 
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     align-content: space-between;
+     align-items: flex-start;
+    }
+    
 
 
 
