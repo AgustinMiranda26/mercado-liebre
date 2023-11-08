@@ -1,0 +1,11 @@
+@media (min-width: 361px) and (max-width:768px) { 
+    .ultima-visita,
+    .Ofertas{flex-direction: column}
+    .nav-bar,
+    .descripcion-producto{display: none}
+    
+    }
+
+@media (min-width:768px){
+    .menu-hamburguesa{display: none;}
+}
