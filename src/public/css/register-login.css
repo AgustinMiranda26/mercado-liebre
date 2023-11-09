@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+.formulario1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.perfil-de-usuario{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.categorias{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.foto{
+    padding-top: 20px;
+}
+.contraseña{
+    padding-top: 20px;
+
+}
+}
+
+.body{
+    position: relative;
+}
+.pie{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
