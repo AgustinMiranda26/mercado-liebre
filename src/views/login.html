@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css/home.css">
 <link rel="stylesheet" href="/css/register-login.css">
-    <title>Registrarse</title>
+    <title>Ingresar</title>
 </head>
 <body>
     <header>
@@ -44,58 +44,18 @@
     </header>
 
     <main>
-        <form class="formulario1" action="/" method="GET">
-            <label for="Nombreyapellido">Nombre y apellido:</label>
-            <input type="text" name="Nombreyapellido">
-    
-            
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario">
+        <form class="formulario2" action="/" method="GET">
+            <label for="Usuario">Usuario:</label>
+            <input type="text" name="Usuario" required
 
-            <label for="email" >Correo electronico:</label>
-            <input type="email" name="email" required>
 
-            <label for="fechadenacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fechadenacimiento" value="20/02/1997" >
-
-            <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio">
-
-            <div class="perfil-de-usuario">
-            <label for="perfil">Perfil de usuario:</label>
-            <label for="radio" name="perfil">Comprador</label>
-            <input type="radio" name="perfil" value="Comprador">
-            <label for="radio" name="perfil">Vendedor</label>
-            <input type="radio" name="perfil" value="Vendedor">
-        </div>
-
-            <div class="Categorias">
-            <label for="Categoria">Categorias de interes:</label>
-            <label for="checkbox" name="Categoria">Electro</label>
-            <input type="checkbox" name="Categoria" value="Electro">
-            <label for="checkbox" name="Categoria">Moda</label>
-            <input type="checkbox" name="Categoria" value="Moda">
-            <label for="checkbox" name="Categoria">Hogar</label>
-            <input type="checkbox" name="Categoria" value="Hogar">
-            <label for="checkbox" name="Categoria">Jugueteria</label>
-            <input type="checkbox" name="Categoria" value="Jugueteria">
-            <label for="checkbox" name="Categoria">Vida Sana</label>
-            <input type="checkbox" name="Categoria" value="Vida sana">
-        </div>
-        <div class="foto">
-            <label for="foto-de-usuario">Foto de Usuario</label>
-            <input type="file" name="foto-de-usuario" accept=".jpg .png">
-        </div>
         <div class="contraseña">
             <label for="password">Contraseña:</label>
             <input type="password" name="contraseña" required>
-            <label for="password">Confirmar contraseña:</label>
-            <input type="password" name="confirmar-contraseña" required>
         </div>
 
-        <div class="botones-register">
-        <button type="submit" value="enviar">Enviar</button> &nbsp;&nbsp; 
-        <button type="reset" value="borrar">Borrar formulario</button>
+        <div class="botones-login">
+        <button type="submit" value="enviar">Ingresar</button>
     </div>
     <span class="feedback"></span>
         </form>

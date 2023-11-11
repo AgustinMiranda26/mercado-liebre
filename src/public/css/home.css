@@ -20,7 +20,38 @@ body {
     font-size: 12px;
 }
 
+.logo-buscador-compra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 
+}
+
+/*
+
+.logoybuscador{
+    display: flex;
+    width: 300px;
+    justify-content: center;
+
+    .Logo{
+        width: 50%;
+        text-align: start}
+
+
+    #buscador-header{
+        display: flex;
+        width: 50%;  
+        align-items: center;
+        justify-content: flex-end}
+}
+
+
+.compraencuotas{
+    display: flex;
+    justify-content: center;    
+}*/
  
 
 /*version desktop
@@ -159,28 +190,7 @@ article{
    justify-content: center;
     align-items: center;
 }
-.logoybuscador{
-    display: flex;
-    width: 300px;
-    justify-content: center;
 
-    .Logo{
-        width: 50%;
-        text-align: start}
-
-
-    #buscador-header{
-        display: flex;
-        width: 50%;  
-        align-items: center;
-        justify-content: flex-end}
-}
-
-
-.compraencuotas{
-    display: flex;
-    justify-content: center;    
-}
 
 
 

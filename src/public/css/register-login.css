@@ -3,6 +3,13 @@
     margin:0;
     padding:0;
 }
+.logo-buscador-compra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
 
 
 
@@ -37,4 +44,20 @@ padding-bottom: 10px;
     bottom: 0;
     width: 100%;
     
+}
+
+.botones-register{
+    display: flex;
+    margin: 10px;
+
+}
+
+.formulario2{
+    display: flex;
+    flex-direction: column;
+background-color: beige;
+   align-items: center;
+   margin-top: 50px;
+
+
 }
