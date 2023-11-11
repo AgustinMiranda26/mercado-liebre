@@ -2,7 +2,17 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    transition:0.5s;
 }
+:root {
+    --amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris--oscuro: #666;
+    --Gris--claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
 .logo-buscador-compra{
     display: flex;
     flex-direction: row;
@@ -13,7 +23,7 @@
 
 
 
-.formulario1{
+.formulario1{ 
     margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -22,42 +32,102 @@
 .perfil-de-usuario{
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} }
 .categorias{
 padding-top: 10px;
 padding-bottom: 10px;
 }
 .foto{
-    padding-top: 20px;
+    padding-top: 10px;
 }
-.contraseña{
-    padding-top: 20px;
 
-}
+.contraseña{
+    margin-top: 5px;
+
 }
 
 .body{
     position: relative;
+    height: 100vh;
+    width: 100%;
 }
+/*
 .pie{
     position: absolute;
     bottom: 0;
     width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     
-}
+}*/
 
 .botones-register{
-    display: flex;
-    margin: 10px;
-
+    padding: 2px;
+    margin: 5px;
 }
+.boton-login{
+    background-color:var(--Azul);
+    color: var(--Gris--claro);
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+}
+
+.usuario-login{
+    width: 200px;
+    border-radius: 3px;
+    border:none;
+    height: 1.4em;
+}
+.contraseña-login{
+width: 200px;
+border-radius: 3px;
+border:none;
+height: 1.4em;
+}
+
 
 .formulario2{
     display: flex;
     flex-direction: column;
-background-color: beige;
-   align-items: center;
    margin-top: 50px;
-
-
+   width: 100%;
+   align-items: center;
 }
+
+.Categorias{
+    display: flex;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.Nombre{
+    border-radius: 3px;
+}
+.usuario{
+    border-radius: 3px;
+}
+.email{
+    border-radius: 3px;
+}
+.fechadenacimiento{
+    border-radius: 3px;
+}
+.domicilio{
+    border-radius: 3px;
+}
+.contraseña{
+    border-radius: 3px;
+}
+.confirmar{border-radius: 3px;}
+
+.perfil-de-usuario{
+    display: flex;
+    justify-content: space-around;
+
+    }

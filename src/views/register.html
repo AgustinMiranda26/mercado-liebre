@@ -18,7 +18,7 @@
     <header>
         <div class="logo-buscador-compra">
         
-            <img class="Logo" width="100"  src="images/logo-mercado-liebre.svg" alt="Logo del home">
+            <a href="/"><img class="Logo" width="100"  src="images/logo-mercado-liebre.svg" alt="Logo del home"></a>
             <h5></i><form id="buscador-header"> </form><input type="search" placeholder="Buscar productos, marcas..."> 
                 <button><i class="fa-solid fa-magnifying-glass fa-fade"></i></button></h5>
         
@@ -46,57 +46,62 @@
     <main>
         <form class="formulario1" action="/" method="GET">
             <label for="Nombreyapellido">Nombre y apellido:</label>
-            <input type="text" name="Nombreyapellido">
+            <input class="Nombre "type="text" name="Nombreyapellido">
     
             
             <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario">
+            <input class="usuario" type="text" name="usuario">
 
             <label for="email" >Correo electronico:</label>
-            <input type="email" name="email" required>
+            <input class="email" type="email" name="email" required>
 
             <label for="fechadenacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="fechadenacimiento" value="20/02/1997" >
+            <input class="fecha" type="date" name="fechadenacimiento" value="20/02/1997" >
 
             <label for="domicilio">Domicilio:</label>
-            <input type="text" name="domicilio">
+            <input class="domicilio" type="text" name="domicilio">
 
             <div class="perfil-de-usuario">
             <label for="perfil">Perfil de usuario:</label>
-            <label for="radio" name="perfil">Comprador</label>
-            <input type="radio" name="perfil" value="Comprador">
+            <label class="radio-comprador" for="radio" name="perfil">Comprador</label>
+            <input class="comprador" type="radio" name="perfil" value="Comprador">
             <label for="radio" name="perfil">Vendedor</label>
-            <input type="radio" name="perfil" value="Vendedor">
+            <input class="vendedor  " type="radio" name="perfil" value="Vendedor">
         </div>
 
             <div class="Categorias">
             <label for="Categoria">Categorias de interes:</label>
-            <label for="checkbox" name="Categoria">Electro</label>
-            <input type="checkbox" name="Categoria" value="Electro">
-            <label for="checkbox" name="Categoria">Moda</label>
-            <input type="checkbox" name="Categoria" value="Moda">
+            
+        <label for="checkbox" name="Categoria">Electro</label> 
+        <input class="categoria" type="checkbox" name="Categoria" value="Electro" >
+           
+        <label for="checkbox" name="Categoria">Moda</label>
+        <input class="categoria" type="checkbox" name="Categoria" value="Moda"> 
+         
             <label for="checkbox" name="Categoria">Hogar</label>
-            <input type="checkbox" name="Categoria" value="Hogar">
+            <input class="categoria" type="checkbox" name="Categoria" value="Hogar">
+
             <label for="checkbox" name="Categoria">Jugueteria</label>
-            <input type="checkbox" name="Categoria" value="Jugueteria">
+            <input class="categoria" type="checkbox" name="Categoria" value="Jugueteria">
+
             <label for="checkbox" name="Categoria">Vida Sana</label>
-            <input type="checkbox" name="Categoria" value="Vida sana">
+            <input class="categoria" type="checkbox" name="Categoria" value="Vida sana">
         </div>
         <div class="foto">
             <label for="foto-de-usuario">Foto de Usuario</label>
-            <input type="file" name="foto-de-usuario" accept=".jpg .png">
+            <input class="foto" type="file" name="foto-de-usuario" accept=".jpg .png">
         </div>
         <div class="contraseña">
             <label for="password">Contraseña:</label>
-            <input type="password" name="contraseña" required>
+            <input class="contraseña" type="password" name="contraseña" required>
             <label for="password">Confirmar contraseña:</label>
-            <input type="password" name="confirmar-contraseña" required>
+            <input class="confirmar"  type="password" name="confirmar-contraseña" required>
         </div>
 
-        <div class="botones-register">
-        <button type="submit" value="enviar">Enviar</button> &nbsp;&nbsp; 
-        <button type="reset" value="borrar">Borrar formulario</button>
-    </div>
+        
+        <button class="botones-register" type="submit" value="enviar">Enviar</button> 
+        <button class="botones-register" type="reset" value="borrar">Borrar formulario</button>
+    
     <span class="feedback"></span>
         </form>
     </main>
