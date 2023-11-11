@@ -19,6 +19,13 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+.buscador-header{
+    width: 150px;
+    height: 1.5em;
+}
+.banner-ofertas{
+    margin-top: 5px;
+}
 
 .logo-buscador-compra{
     display: flex;
@@ -28,48 +35,16 @@ body {
 
 }
 
-/*
-
-.logoybuscador{
-    display: flex;
-    width: 300px;
-    justify-content: center;
-
-    .Logo{
-        width: 50%;
-        text-align: start}
-
-
-    #buscador-header{
-        display: flex;
-        width: 50%;  
-        align-items: center;
-        justify-content: flex-end}
+.nav-bar{
+    margin-top: 10px;
 }
 
-
-.compraencuotas{
-    display: flex;
-    justify-content: center;    
-}*/
- 
-
-/*version desktop
-@media (min-width:769px){
-}}*/
 .titular{
     text-align: center;
 }
 
 h4 {font-size: 24px;
 }
-
-.fa-truck{
-    color:var(--Verde)
-}
-
-
-
 
 
 .menu-hamburguesa{
@@ -87,19 +62,33 @@ h4 {font-size: 24px;
 }
 
 .fa-credit-card{
+    color: var(--Celeste);
     font-size:2em;
     margin-bottom: 10px;
+ 
+}
+.fa-credit-card:hover{
+    color: var(--Azul);
+    transition: 500ms;
 }
 .fa-gift{
+    color: var(--Celeste);
     font-size: 2em;
     margin-bottom: 10px;
 }
-
+.fa-gift:hover{
+color: var(--Azul);
+transition: 500ms;
+}
 .fa-user-shield{
+    color: var(--Celeste);
     font-size: 2em;
     margin-bottom: 10px;
 }
-
+.fa-user-shield:hover{
+    color:var(--Azul);
+    transition: 500ms;
+}
 
 main{
    text-align: center;
@@ -110,9 +99,20 @@ article{
     margin: 10px;
     width: 220px;
     height: 300px;
-    background-color: #ffffff;
-   box-shadow: 0px 0px 15px rgb(100,100,100);
-  
+    background-color:var(--Gris--claro);
+   border: #666 1px solid;
+   .descripcion-producto{
+    visibility: hidden;
+   }
+   transition: 500ms;
+}
+article:hover{
+    .descripcion-producto{
+        visibility: visible;
+    }
+    box-shadow: 0px 0px 15px rgb(100,100,100);
+    border-radius: 3px;
+
 }
 .cajachica{
     border-top: 1px solid #ebebeb; 
@@ -192,11 +192,32 @@ article{
 }
 
 
+@media(min-width:1240px){
+    .pie{
+        display: flex;
+        flex-direction: row;
+    }
+    .Copyright{
+        width: 100%;
+        text-align: center;
+    }
+}
 
+.fa-truck{
+    color: var(--Verde);
+}
 
+.fa-truck:hover{
+    animation: rotate;
+    animation-duration: 1000ms;
+}
 
-
-
+@keyframes rotate{
+    from {
+        transform: rotateZ(-45deg);
+    }
+    
+}
 
 
 

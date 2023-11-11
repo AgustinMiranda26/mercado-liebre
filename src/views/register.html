@@ -14,12 +14,12 @@
 <link rel="stylesheet" href="/css/register-login.css">
     <title>Registrarse</title>
 </head>
-<body>
+<body >
     <header>
         <div class="logo-buscador-compra">
         
-            <a href="/"><img class="Logo" width="100"  src="images/logo-mercado-liebre.svg" alt="Logo del home"></a>
-            <h5></i><form id="buscador-header"> </form><input type="search" placeholder="Buscar productos, marcas..."> 
+            <a href="/"><img class="Logo" width="150"  src="images/logo-mercado-liebre.svg" alt="Logo del home"></a>
+            <h5></i><form id="buscador-header"> </form><input class="buscador-header" type="search" placeholder="Buscar productos, marcas..."> 
                 <button><i class="fa-solid fa-magnifying-glass fa-fade"></i></button></h5>
         
                 
@@ -37,53 +37,52 @@
         <ul class="ul2">
 
             <li><a href="#"> </i>Crea tu cuenta </a><i class="fa-solid fa-id-card"></i></li>
-            <li><a href="#"> Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+            <li><a href="/login"> Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
             <li><a href="#"> Mis compras </a><i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
     </nav>
     </header>
 
-    <main>
+    <main >
         <form class="formulario1" action="/" method="GET">
             <label for="Nombreyapellido">Nombre y apellido:</label>
-            <input class="Nombre "type="text" name="Nombreyapellido">
+            <input class="Nombre "type="text" name="Nombreyapellido"><br>
     
             
             <label for="usuario">Usuario:</label>
-            <input class="usuario" type="text" name="usuario">
+            <input class="usuario" type="text" name="usuario"><br>
 
             <label for="email" >Correo electronico:</label>
-            <input class="email" type="email" name="email" required>
+            <input class="email" type="email" name="email" required><br>
 
             <label for="fechadenacimiento">Fecha de nacimiento:</label>
-            <input class="fecha" type="date" name="fechadenacimiento" value="20/02/1997" >
+            <input class="fecha" type="date" name="fechadenacimiento" value="20/02/1997" ><br>
 
             <label for="domicilio">Domicilio:</label>
             <input class="domicilio" type="text" name="domicilio">
 
             <div class="perfil-de-usuario">
-            <label for="perfil">Perfil de usuario:</label>
+            <label for="perfil">Perfil de usuario:</label>&nbsp;
             <label class="radio-comprador" for="radio" name="perfil">Comprador</label>
-            <input class="comprador" type="radio" name="perfil" value="Comprador">
+            <input class="comprador" type="radio" name="perfil" value="Comprador">&nbsp;
             <label for="radio" name="perfil">Vendedor</label>
             <input class="vendedor  " type="radio" name="perfil" value="Vendedor">
         </div>
 
             <div class="Categorias">
-            <label for="Categoria">Categorias de interes:</label>
+            <label for="Categoria">Categorias de interes:</label>&nbsp;
             
-        <label for="checkbox" name="Categoria">Electro</label> 
-        <input class="categoria" type="checkbox" name="Categoria" value="Electro" >
+        <label for="checkbox" name="Categoria">Electro</label>
+        <input class="categoria" type="checkbox" name="Categoria" value="Electro" >&nbsp;
            
         <label for="checkbox" name="Categoria">Moda</label>
-        <input class="categoria" type="checkbox" name="Categoria" value="Moda"> 
+        <input class="categoria" type="checkbox" name="Categoria" value="Moda"> &nbsp;
          
             <label for="checkbox" name="Categoria">Hogar</label>
-            <input class="categoria" type="checkbox" name="Categoria" value="Hogar">
+            <input class="categoria" type="checkbox" name="Categoria" value="Hogar">&nbsp;
 
             <label for="checkbox" name="Categoria">Jugueteria</label>
-            <input class="categoria" type="checkbox" name="Categoria" value="Jugueteria">
-
+            <input class="categoria" type="checkbox" name="Categoria" value="Jugueteria">&nbsp;
             <label for="checkbox" name="Categoria">Vida Sana</label>
             <input class="categoria" type="checkbox" name="Categoria" value="Vida sana">
         </div>
@@ -98,34 +97,41 @@
             <input class="confirmar"  type="password" name="confirmar-contraseña" required>
         </div>
 
-        
-        <button class="botones-register" type="submit" value="enviar">Enviar</button> 
-        <button class="botones-register" type="reset" value="borrar">Borrar formulario</button>
-    
+        <div class="botones-register">
+        <button class="boton-enviar" type="submit" value="enviar">Enviar</button> 
+        <button class="boton-borrar" type="reset" value="borrar">Borrar formulario</button>
+    </div>
+
     <span class="feedback"></span>
         </form>
     </main>
     
 
-<footer>
-    <section>
-        <ul class="pie" style="list-style: none;">
-            <i class="fa-solid fa-credit-card" style="color: #063c9b;"></i>
-            <li></i><b>Pagá con tarjeta o en efectivo</b></li>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con
-                tarjeta o efectivo en puntos de pago.¡ Y siempre es seguro!</p>
+    <footer>
+        <section>
+            <ul class="pie" style="list-style: none;">
+                <div>
+                <i class="fa-solid fa-credit-card" ></i>
+                <li></i><b>Pagá con tarjeta o en efectivo</b></li>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con
+                    tarjeta o efec  tivo en puntos de pago.¡ Y siempre es seguro!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gift" ></i>
+                <li></i><b>Envio gratis desde $ 2.500</b></li>  
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
 
-                <i class="fa-solid fa-gift" style="color: #063c9b;"></i>
-            <li></i><b>Envio gratis desde $ 2.500</b></li>  
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-                <i class="fa-solid fa-user-shield" style="color: #063c9b;"></i>
-            <li></i><b>Seguridad de principio a fin</b></li>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-            <li>Copyright © 1999-2020 MercadoLiebre S.R.L.</li>
-        </ul>
-    </section>
-</footer>
+                <div>
+                    <i class="fa-solid fa-user-shield" ></i>
+                <li></i><b>Seguridad de principio a fin</b></li>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+                </div>
+            </ul>
+            <p class="Copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
 </body>
 </html>
