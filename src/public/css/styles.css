@@ -1,12 +1,19 @@
-@media (min-width: 361px) and (max-width:768px) { 
-    .ultima-visita,
-    .Ofertas{flex-direction: column}
-    .nav-bar,
-    .descripcion-producto{display: none}
-    
+
+
+/*MEDIAS QUERIS*/
+
+@media(min-width:412px){
+    .compraencuotas{
+        display: none;
     }
+}
+
+
 
 @media (min-width:768px){
+    .compraencuotas{
+        display: inline;
+    }
     .menu-hamburguesa{display: none;}
     .nav-bar{
         display: flex;
@@ -17,15 +24,15 @@
     .ul1{display: flex;
         list-style: none;
         width: 30%;
-       
-        justify-content: space-around;
+        justify-content: space-evenly;
+        font-size: 10px;
     }
     
     .ul2{display: flex;
         list-style-type: none;
         width: 30%;
-       
         justify-content: space-around;
+        font-size: 10px;
         }
     
 }
@@ -35,3 +42,26 @@
 }
 
 
+@media(min-width:1240px){
+    .menu-hamburguesa{display: none;}
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .ul1{display: flex;
+        list-style: none;
+        width: 30%;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+    
+    .ul2{display: flex;
+        list-style-type: none;
+        width: 30%;
+        justify-content: space-around;
+        font-size: 15px;
+        }
+    
+}

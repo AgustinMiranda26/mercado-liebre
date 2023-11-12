@@ -14,6 +14,7 @@
     padding:0;
 }
 
+
 body {
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
@@ -21,7 +22,15 @@ body {
 }
 .buscador-header{
     width: 150px;
-    height: 1.5em;
+    height: 20px;
+   
+}
+.fa-magnifying-glass{
+    width: 15px;
+}
+.lupa-buscador{
+    display: flex;
+
 }
 .banner-ofertas{
     margin-top: 5px;
@@ -192,17 +201,6 @@ article:hover{
 }
 
 
-@media(min-width:1240px){
-    .pie{
-        display: flex;
-        flex-direction: row;
-    }
-    .Copyright{
-        width: 100%;
-        text-align: center;
-    }
-}
-
 .fa-truck{
     color: var(--Verde);
 }
@@ -218,6 +216,7 @@ article:hover{
     }
     
 }
+
 
 
 

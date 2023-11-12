@@ -17,11 +17,26 @@
     margin-top: 10px;
 }
 
+header{
+    width: 100%;
+}
 .logo-buscador-compra{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
+}
+.buscador-header{
+    width: 150px;
+    height: 20px;
+   
+}
+.fa-magnifying-glass{
+    width: 15px;
+}
+.lupa-buscador{
+    display: flex;
 
 }
 
@@ -149,7 +164,6 @@ height: 1.4em;
 }
 
 main{
-   
     min-height: calc(100vh-200px);
 }
 
