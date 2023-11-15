@@ -1,26 +1,23 @@
 const express= require ("express");
-const app= express()
 const path= require ("path");
-
+const app= express()
 const port= 3000
-
-
-//config static folder
-app.use(express.static(path.join(__dirname, 'public')))
-
-app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname,'views','home.html'))
-})
-
-app.get('/register', (req,res)=>{
-    res.sendFile(path.join(__dirname,'views','register.html'))
-})
-app.get('/login', (req,res)=>{
-    res.sendFile(path.join(__dirname,'views','login.html'))
-})
+const rutaHome= require('./routes/home.js')
+const rutaLogin= require('./routes/login.js')
+const rutaRegister= require('./routes/register.js')
 
 app.listen(port, ()=>{
     console.log(`servidor corriendo en http://localhost${port}👌`)
 })
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.use('/', rutaHome);
+app.use('/login', rutaLogin);
+app.use('/register', rutaRegister);
+
+
+
+
 
 
